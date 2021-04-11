@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const swaggerJsDoc = require('swagger-jsdoc');
 const swaggerUI = require('swagger-ui-express');
-
+const port = process.env.PORT || 5000;
 const swaggerOptions = {
   swaggerDefinition: {
     info: {
@@ -54,4 +54,4 @@ app.post('/books', (req, res) => {
   res.status(201).send();
 });
 
-app.listen(5000, () => console.log("listening on 5000"));
+app.listen(port, () => console.log("listening on " +port));
