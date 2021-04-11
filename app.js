@@ -9,6 +9,11 @@ const swaggerOptions = {
       title: "Library API",
       version: '1.0.0',
     },
+    contact: {
+      name: "Akshay Nayi",
+      url: "https://temp-swagger.herokuapp.com/api-docs/",
+      email: "akshaynayi2572@gmail.com",
+    },
   },
   apis: ["app.js"],
 };
